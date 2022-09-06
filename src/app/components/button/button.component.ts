@@ -23,7 +23,7 @@ export class ButtonComponent implements OnInit {
   }
 
   eventClickHandler(){
-    this.btnClick.emit;
+    this.btnClick.emit();
   }
 
 }
