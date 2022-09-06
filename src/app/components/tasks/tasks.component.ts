@@ -30,4 +30,8 @@ export class TasksComponent implements OnInit {
     this.taskService.updateTaskReminder(task).subscribe();
   }
 
+  addTaskBtnClickHandler(task: Task){
+    this.taskService.addTask(task).subscribe((task) => this.tasks.push(task));
+  }
+
 }

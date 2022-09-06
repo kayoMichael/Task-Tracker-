@@ -1,1 +1,2 @@
+<app-add-task (submitBtnClick)="addTaskBtnClickHandler($event)"></app-add-task>
 <app-task-item *ngFor="let task of tasks" [task]="task" (btnClick)="deleteIconClickHandler(task)" (onToggle)="toggleBtnClickHandler(task)"></app-task-item>
